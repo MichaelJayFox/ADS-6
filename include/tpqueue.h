@@ -5,14 +5,14 @@
 
 template<typename T, int size>
 class TPQueue {
-  private:
+   private:
     uint64_t first;
     uint64_t last;
     uint64_t cnt;
     T * arr;
-  public:
-    TPQueue() :first(0), last(0), cnt(0) { 
-        arr = new T[size]; 
+   public:
+    TPQueue() :first(0), last(0), cnt(0) {
+        arr = new T[size];
     }
     bool isEmpty() const {
       return 0 == cnt;
@@ -20,8 +20,8 @@ class TPQueue {
     bool isFull() const {
       return size == cnt;
     }
-  void push (const T& value){
-    if(isFull()){
+  void push(const T& value) {
+    if(isFull() ) {
       throw std::string("String is Full");
     } else {
             uint64_t l = last;
