@@ -5,13 +5,13 @@
 
 template<typename T, int size>
 class TPQueue {
-    private:
+ private:
     uint64_t first;
     uint64_t last;
     uint64_t cnt;
     T * arr;
-    
-    public:
+
+ public:
     TPQueue() :first(0), last(0), cnt(0) {
         arr = new T[size];
     }
