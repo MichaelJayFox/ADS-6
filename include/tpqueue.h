@@ -9,7 +9,7 @@ class TPQueue {
     uint64_t first;
     uint64_t last;
     uint64_t cnt;
-    T* arr;
+    T * arr;
   public:
     TPQueue() :first(0), last(0), cnt(0) { 
         arr = new T[size]; 
